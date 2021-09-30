@@ -2,11 +2,78 @@ body {
     font-family: sans-serif;
 }
 
+div.main {
+    display: flex;
+}
+
+.section-header{
+    margin-left: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    width: 45%;
+    background-color: #eee;
+    color: #696b6a;
+}
+
+
+#first-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+#section {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+#second-block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.fish-buy {
+    display: flex;
+    width: 30%;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: #bbbebd;
+
+}
+.name{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    margin-left: 15px;
+}
 
 header {
     color:#fff;
     background-color: #29ab6c;
-    margin: 10px 20px 15px 0px;
+    margin: 10px 20px 10px 20px;
     height: 55px;
   }
 
@@ -18,12 +85,9 @@ header h2 {
 aside {
 
     width: 200px;
-    padding: 0px 20px 20px 10px;
+    padding: 0px 20px 20px 20px;
+    margin-left: 20px;
     background-color: #eee;
-    display: table-cell;
-    vertical-align: top;
-
-
 }
 
 aside h4 {
@@ -46,9 +110,8 @@ aside label {
 footer {
     color:#a5a8a7;
     background-color: #eee;
-    margin: 10px 20px 15px 0px;
+    margin: 10px 20px 15px 20px;
     height: 35px;
-
 }
 
 footer span {
