@@ -80,10 +80,13 @@ h1 {
 
 aside {
 
-    width: 200px;
+    width: 240px;
     padding: 0px 20px 20px 20px;
     margin-left: 20px;
     background-color: #eee;
+}
+@media (max-width: 520px) {
+aside {display: none;}
 }
 
 aside h4 {
