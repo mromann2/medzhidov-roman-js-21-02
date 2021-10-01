@@ -53,31 +53,28 @@ h1 {
     margin-top: 10px;
 
 }
-.icon{
+.fish-buy__icon{
     width: 50px;
     height: 50px;
     background-color: #bbbebd;
 
 }
-.name{
+.fish-buy__name{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-h2 {
-    margin-left: 15px;
-}
-
-header {
+.header {
     color:#fff;
     background-color: #29ab6c;
     margin: 10px 20px 10px 20px;
     height: 55px;
   }
 
-header h2 {
+.header__h2 {
+    margin-left: 15px;
     box-sizing: border-box;
     padding: 15px;
 }
