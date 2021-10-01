@@ -39,15 +39,14 @@ h1 {
 }
 
 #second-block{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr
 
 }
 
 .fish-buy {
     display: flex;
-    width: 30%;
+    width: 90%;
     background-color: #eee;
     padding: 10px;
     margin-top: 10px;
@@ -119,4 +118,8 @@ footer span {
 
 footer span#right {
     float: right;
+}
+
+h2 {
+ margin-left: 15px;
 }
