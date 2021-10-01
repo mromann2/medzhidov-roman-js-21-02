@@ -119,7 +119,11 @@ footer span {
     float: left;
 }
 
-footer span#right {
+.main_theme_dark {
+background-color: black
+}
+
+.right {
     float: right;
 }
 
