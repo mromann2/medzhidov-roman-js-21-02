@@ -40,17 +40,15 @@ h2 {
 
 .second-block{
     display: grid;
-    grid-template: 1fr 1fr/1fr 1fr 1fr
-
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    grid-column-gap: 10px;
 }
 
 .fish-buy {
     display: flex;
-    width: 90%;
     background-color: #eee;
     padding: 10px;
     margin-top: 10px;
-
 }
 .fish-buy__icon{
     width: 50px;
@@ -85,6 +83,7 @@ aside {
     margin-left: 20px;
     background-color: #eee;
 }
+
 @media (max-width: 520px) {
 aside {display: none;}
 }
@@ -120,13 +119,10 @@ footer span {
 }
 
 .main_theme_dark {
-background-color: black
+background-color: rgb(114, 111, 111)
 }
 
 .right {
     float: right;
 }
 
-h2 {
- margin-left: 15px;
-}
