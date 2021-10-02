@@ -21,24 +21,24 @@ div.main {
 }
 
 
-#first-block {
+.first-block {
     display: flex;
     justify-content: space-between;
 }
 
 
-h1 {
+h2 {
     font-size: 2em;
     margin-bottom: 5px;
 }
 
-#section {
+.section {
     margin-left: 20px;
     margin-right: 20px;
     width: 100%;
 }
 
-#second-block{
+.second-block{
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr 1fr
 
@@ -72,10 +72,10 @@ h1 {
     height: 55px;
   }
 
-.header__h2 {
+.header__h1 {
     margin-left: 15px;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 10px;
 }
 
 aside {
