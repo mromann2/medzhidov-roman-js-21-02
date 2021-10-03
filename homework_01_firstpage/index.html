@@ -6,8 +6,11 @@
     <link href="CSS/Style.css" rel="stylesheet">
 </head>
 <body>
-<header><h1>Интернет-магазин "Не только красивое"</h1></header>
-<div class="main">
+    <header class="header">
+        <input class="right header__theme-button" type="button" value="тема">
+        <h1 class="header__h1">Интернет-магазин "Не только красивое"</h1>
+    </header>
+<main class="main">
     <aside>
         <div>
             <h4>Морская рыба</h4>
@@ -23,73 +26,73 @@
         </div>
     </aside>
 
-    <div class="section">
+    <section class="section">
         <div class="section-header">
             <h2>Рыбы на любой вкус</h2>
             <span>Мы продаем рыбов, а не только показываем!</span>
         </div>
         <div class="first-block">
-            <div class="card">
-                <a href="#">Замороженные рыбы</a>
-                <span>Мы заморозили выбов для вас</span>
-            </div>
+            <article class="card">
+                <a class="card__a" href="#">Замороженные рыбы</a>
+                <span class="card__slogan">Мы заморозили выбов для вас</span>
+            </article>
 
-            <div class="card">
-                <a href="#">Живые рыбы</a>
-                <span>На кухню или на развеление</span>
-            </div>
+            <article class="card">
+                <a class="card__a" href="#">Живые рыбы</a>
+                <span class="card__slogan">На кухню или на развеление</span>
+            </article>
         </div>
-
-
-        <h2>Популярные</h2>
+        <div class="section-header">
+            <h2 >Популярные</h2>
+        </div>
         <div class="second-block">
-            <div class=fish-buy>
-                <div class="icon"></div>
-                <div class="name">
-                    <a href="#">Палтус</a>
-                    <input type="button" value="купить">
+            <article class=fish-buy>
+                <div class="fish-buy__icon"></div>
+                <div class="fish-buy__name">
+                    <a class="fish-buy__a" href="#">Палтус</a>
+                    <input class="fish-buy__button" type="button" value="купить">
                 </div>
-            </div>
-            <div class=fish-buy>
-                <div class="icon"></div>
-                <div class="name">
-                    <a href="#">Сёмга</a>
-                    <input type="button" value="купить">
+            </article>
+            <article class=fish-buy>
+                <div class="fish-buy__icon"></div>
+                <div class="fish-buy__name">
+                    <a class="fish-buy__a" href="#">Сёмга</a>
+                    <input class="fish-buy__button" type="button" value="купить">
                 </div>
-            </div>
-            <div class=fish-buy>
-                <div class="icon"></div>
-                <div class="name">
-                    <a href="#">Сом</a>
-                    <input type="button" value="купить">
+            </article>
+            <article class=fish-buy>
+                <div class="fish-buy__icon"></div>
+                <div class="fish-buy__name">
+                    <a class="fish-buy__a" href="#">Сом</a>
+                    <input class="fish-buy__button" type="button" value="купить">
                 </div>
-            </div>
-            <div class=fish-buy>
-                <div class="icon"></div>
-                <div class="name">
-                    <a href="#">Мойва</a>
-                    <input type="button" value="купить">
+            </article>
+            <article class=fish-buy>
+                <div class="fish-buy__icon"></div>
+                <div class="fish-buy__name">
+                    <a class="fish-buy__a" href="#">Мойва</a>
+                    <input class="fish-buy__button" type="button" value="купить">
                 </div>
-            </div>
-            <div class=fish-buy>
-                <div class="icon"></div>
-                <div class="name">
-                    <a href="#">Сельдь</a>
-                    <input type="button" value="купить">
+            </article>
+            <article class=fish-buy>
+                <div class="fish-buy__icon"></div>
+                <div class="fish-buy__name">
+                    <a class="fish-buy__a" href="#">Сельдь</a>
+                    <input class="fish-buy__button" type="button" value="купить">
                 </div>
-            </div>
-            <div class=fish-buy>
-                <div class="icon"></div>
-                <div class="name">
-                    <a href="#">Тунец</a>
-                    <input type="button" value="купить">
+            </article>
+            <article class=fish-buy>
+                <div class="fish-buy__icon"></div>
+                <div class="fish-buy__name">
+                    <a class="fish-buy__a" href="#">Тунец</a>
+                    <input class="fish-buy__button" type="button" value="купить">
                 </div>
-            </div>
+            </article>
         </div>
-    </div>
-</div>
+    </section>
+</main>
 
 <footer><span>Контакты </span> <span class="right">&copy; 2021 ИП Рыбов О.А.</span></footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

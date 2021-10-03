@@ -2,8 +2,12 @@ body {
     font-family: sans-serif;
 }
 
-div.main {
+.main {
     display: flex;
+}
+
+.main_theme_dark {
+background-color: rgb(114, 111, 111)
 }
 
 .section-header{
@@ -39,55 +43,58 @@ h2 {
 }
 
 .second-block{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    grid-column-gap: 10px;
 }
 
 .fish-buy {
     display: flex;
-    width: 30%;
     background-color: #eee;
     padding: 10px;
     margin-top: 10px;
-
 }
-.icon{
+.fish-buy__icon{
     width: 50px;
     height: 50px;
     background-color: #bbbebd;
 
 }
-.name{
+.fish-buy__name{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-h1 {
-    margin-left: 15px;
-}
-
-header {
+.header {
     color:#fff;
     background-color: #29ab6c;
     margin: 10px 20px 10px 20px;
     height: 55px;
   }
 
-header h1 {
+  .header_theme_dark {
+  background-color: rgb(114, 111, 111)
+  }
+
+.header__h1 {
+    margin-left: 15px;
     box-sizing: border-box;
     padding: 10px;
 }
 
 aside {
 
-    width: 200px;
+    width: 240px;
     padding: 0px 20px 20px 20px;
     margin-left: 20px;
     background-color: #eee;
+
+}
+
+@media (max-width: 520px) {
+aside {display: none;}
 }
 
 aside h4 {
@@ -120,6 +127,7 @@ footer span {
     float: left;
 }
 
-footer span#right {
+.right {
     float: right;
 }
+
