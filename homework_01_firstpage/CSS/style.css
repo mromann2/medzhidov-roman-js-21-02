@@ -24,6 +24,9 @@ background-color: rgb(114, 111, 111)
     color: #696b6a;
 }
 
+.card_theme_dark {
+    background-color: #b5aeae;
+}
 
 .first-block {
     display: flex;
@@ -106,6 +109,10 @@ aside {
     background-color: #eee;
 }
 
+.aside_theme_dark {
+    background-color: #b5aeae;
+}
+
 @media (max-width: 520px) {
 aside {display: none;}
 }
@@ -132,10 +139,14 @@ aside label {
 }
 
 footer {
-    color:#a5a8a7;
+    color: #696b6a;
     background-color: #eee;
     margin: 10px 20px 15px 20px;
     height: 35px;
+}
+
+.footer_theme_dark {
+    background-color: #b5aeae;
 }
 
 footer span {
