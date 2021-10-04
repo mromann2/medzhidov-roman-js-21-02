@@ -97,7 +97,8 @@ aside {
 aside {display: none;}
 }
 
-aside h4 {
+.checkbox-group-name {
+    font-weight: bold;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -113,6 +114,9 @@ aside label {
     margin-left: 20px;
 }
 
+.section-header_h3 {
+    font-size: 1.5em;
+}
 
 footer {
     color:#a5a8a7;
