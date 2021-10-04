@@ -53,7 +53,22 @@ h2 {
     background-color: #eee;
     padding: 10px;
     margin-top: 10px;
+    transition-property: background-color;
+    transition-duration: 3s;
 }
+
+.fish-buy:hover {
+    background-color: white;
+}
+
+.fish-buy_theme_dark {
+    background-color: #b5aeae;
+}
+
+.fish-buy_theme_dark:hover {
+background-color: rgb(114, 111, 111);
+}
+
 .fish-buy__icon{
     width: 50px;
     height: 50px;
@@ -74,7 +89,7 @@ h2 {
     height: 55px;
   }
 
-  .header_theme_dark {
+.header_theme_dark {
   background-color: rgb(114, 111, 111)
   }
 
@@ -85,12 +100,10 @@ h2 {
 }
 
 aside {
-
     width: 240px;
     padding: 0px 20px 20px 20px;
     margin-left: 20px;
     background-color: #eee;
-
 }
 
 @media (max-width: 520px) {
