@@ -93,6 +93,10 @@ h2 {
     background-color: #29ab6c;
     margin: 10px 20px 10px 20px;
     height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
 .header_theme_dark {
@@ -100,9 +104,43 @@ h2 {
   }
 
 .header__h1 {
-    margin-left: 15px;
-    box-sizing: border-box;
-    padding: 10px;
+    margin: 10px 0px 0px 15px;
+    width: 700px;
+
+}
+
+.header__theme-button {
+    width: 50px;
+    height: 20px;
+    align-self: flex-end
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    align-self: flex-end
+
+}
+
+.loader__message {
+    color: white;
+}
+
+.loader__animation {
+    width: 5px;
+    height: 10px;
+    background-color: white;
+
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    100% {
+    transform: translateX(30px);
+    }
 }
 
 aside {
