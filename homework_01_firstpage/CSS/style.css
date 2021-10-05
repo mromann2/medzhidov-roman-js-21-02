@@ -56,12 +56,13 @@ h2 {
     background-color: #eee;
     padding: 10px;
     margin-top: 10px;
-    transition-property: background-color;
-    transition-duration: 3s;
+
 }
 
 .fish-buy:hover {
     background-color: white;
+    transition-property: background-color;
+    transition-duration: 2s;
 }
 
 .fish-buy_theme_dark {
@@ -69,7 +70,9 @@ h2 {
 }
 
 .fish-buy_theme_dark:hover {
-background-color: rgb(114, 111, 111);
+    background-color: rgb(114, 111, 111);
+    transition-property: background-color;
+    transition-duration: 2s;
 }
 
 .fish-buy__icon{
