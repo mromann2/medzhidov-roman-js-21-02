@@ -75,12 +75,6 @@ h2 {
     transition-duration: 2s;
 }
 
-.fish-buy__icon{
-    width: 50px;
-    height: 50px;
-    background-color: #bbbebd;
-
-}
 .fish-buy__name{
     margin-left: 10px;
     display: flex;
