@@ -24,6 +24,9 @@ background-color: rgb(114, 111, 111)
     color: #696b6a;
 }
 
+.card_theme_dark {
+    background-color: #b5aeae;
+}
 
 .first-block {
     display: flex;
@@ -53,6 +56,23 @@ h2 {
     background-color: #eee;
     padding: 10px;
     margin-top: 10px;
+
+}
+
+.fish-buy:hover {
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+.fish-buy_theme_dark {
+    background-color: #b5aeae;
+}
+
+.fish-buy_theme_dark:hover {
+    background-color: rgb(114, 111, 111);
+    transition-property: background-color;
+    transition-duration: 2s;
 }
 
 .fish-buy__name{
@@ -67,25 +87,65 @@ h2 {
     background-color: #29ab6c;
     margin: 10px 20px 10px 20px;
     height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .header_theme_dark {
+.header_theme_dark {
   background-color: rgb(114, 111, 111)
   }
 
 .header__h1 {
-    margin-left: 15px;
-    box-sizing: border-box;
-    padding: 10px;
+    margin: 10px 0px 0px 15px;
+    width: 700px;
+
+}
+
+.header__theme-button {
+    width: 50px;
+    height: 20px;
+    align-self: flex-end
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    align-self: flex-end
+
+}
+
+.loader__message {
+    color: white;
+}
+
+.loader__animation {
+    width: 5px;
+    height: 10px;
+    background-color: white;
+
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    100% {
+    transform: translateX(30px);
+    }
 }
 
 aside {
-
     width: 240px;
     padding: 0px 20px 20px 20px;
     margin-left: 20px;
     background-color: #eee;
+}
 
+.aside_theme_dark {
+    background-color: #b5aeae;
 }
 
 @media (max-width: 520px) {
@@ -114,10 +174,14 @@ aside label {
 }
 
 footer {
-    color:#a5a8a7;
+    color: #696b6a;
     background-color: #eee;
     margin: 10px 20px 15px 20px;
     height: 35px;
+}
+
+.footer_theme_dark {
+    background-color: #b5aeae;
 }
 
 footer span {
