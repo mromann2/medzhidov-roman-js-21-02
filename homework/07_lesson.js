@@ -5,7 +5,7 @@
 //Разработать метод rename, для смены клички животного. Новая кличка должна содержать только кирилические символы, пробелы или символ "-".
 //Выполнить то же самое использую функции конструкторы. Выполнить то же самое, используя классы.
 
-//1. Объект
+//1. Объект__________________________________________________________
 // 'use strict'
 // const animal  = {
 //     _name: 'noname',
@@ -94,7 +94,7 @@
 
 
 
-//Функция конструктор
+//Функция конструктор______________________________________________________________
 
 // function Animal(name){
 //     this.name = name;
@@ -170,4 +170,59 @@
 //         enumerable: false
 //     }
 // });
+
+//3. Класс______________________________________________________
+
+class Animal {
+    constructor(name) {
+        this.name = name
+    }
+    eat(){
+        console.log(`${this._name} ест`)
+    }
+    say(){
+        console.log('неизвестное животное молчит')
+    }
+    set name(newName){
+        const reg = /^[а-яА-Я\s-]+$/g
+        reg.test(newName) ? this._name = newName : console.log('Кличка может содержать кирилические символы, пробелы или символ "-"')
+    }
+    get name(){
+        return this._name
+    }
+}
+
+let cat = new Animal('Мурзик');
+let dog = new Animal('Шарик');
+let parrot = new Animal('Кеша');
+
+Object.defineProperties(cat, {
+    'say': {
+        writable: false,
+        configurable: false,
+        enumerable: false
+    },
+    'hunt': {
+        writable: false,
+        configurable: false,
+        enumerable: false
+    }
+});
+
+Object.defineProperties(dog, {
+    'say': {
+        writable: false,
+        configurable: false,
+        enumerable: false
+    }
+});
+
+Object.defineProperties(parrot, {
+    'say': {
+        writable: false,
+        configurable: false,
+        enumerable: false
+    }
+});
+
 
