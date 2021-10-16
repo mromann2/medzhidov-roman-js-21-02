@@ -11,7 +11,7 @@ let colorButtonsBlock = document.querySelector('.color-buttons-block');
 createButton.addEventListener('click', ()=>{
     let span = document.body.querySelector('span')
     let regName = /^[а-яА-Я\s-]+$/g;
-    let regPhone = /^[\d+]+$/g;
+    let regPhone = /^[\d+\s-]+$/g;
 
     if(span){
         span.remove()
