@@ -1,0 +1,32 @@
+.table, .table *{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 500px;
+    text-align: center
+}
+
+.table__delete-button{
+
+    width: 20px;
+    height: 20px;
+}
+
+.input-block__name-input, .input-block__phone-input{
+    width: 160px;
+}
+
+.color-buttons-block__red-button, .table_red{
+    background-color: red;
+    color: white;
+}
+
+.color-buttons-block__green-button, .table_green{
+    background-color: green;
+    color: yellow;
+}
+
+.color-buttons-block__blue-button, .table_blue{
+    background-color: lightblue;
+    color: brown;
+}
