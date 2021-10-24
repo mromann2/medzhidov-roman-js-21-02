@@ -1,0 +1,37 @@
+.fileButton{
+    color: blue;
+}
+.fileButton:hover{
+    color: lightskyblue;
+}
+
+.gallery{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 30%;
+}
+
+.submitButton{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.submitButton:active{
+    background-color: lightblue;
+}
+
+.loader{
+    width: 190px;
+    position: relative;
+    height: 20px;
+}
+.loader-box{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #29ab6c;
+}
