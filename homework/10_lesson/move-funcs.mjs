@@ -6,7 +6,7 @@ let interval;
 function moveRight() {
     return interval = requestAnimationFrame(() => {
         if (pos < Number.parseInt(getComputedStyle(loaderBox.parentElement).width) - Number.parseInt(getComputedStyle(loaderBox).width)) {
-            pos+=4;
+            pos += 4;
             loaderBox.style.left = `${pos}px`
             interval = requestAnimationFrame(moveRight)
         } else {
@@ -14,12 +14,13 @@ function moveRight() {
         }
     })
 }
+
 function moveLeft() {
     return interval = requestAnimationFrame(() => {
         if (pos >= 0) {
-            pos-=4;
+            pos -= 4;
             loaderBox.style.left = `${pos}px`
-            interval =  requestAnimationFrame(moveLeft)
+            interval = requestAnimationFrame(moveLeft)
         } else {
             interval = requestAnimationFrame(moveRight)
         }

@@ -8,21 +8,21 @@
 import {moveRight} from "./move-funcs.mjs";
 import {upload} from "./upload-func.js";
 
-export let imgArray = localStorage.getItem('imgArray') ? JSON.parse(localStorage.getItem('imgArray')): [];
+export let imgArray = localStorage.getItem('imgArray') ? JSON.parse(localStorage.getItem('imgArray')) : [];
 let fileInput = document.getElementById('fileInput')
 let submitButton = document.querySelector('.submitButton')
 
 imgArray.forEach(addImgtoGallery)
 
-export function addImgtoGallery(url){
-    let img =document.createElement('img')
-    img.src=url
+export function addImgtoGallery(url) {
+    let img = document.createElement('img')
+    img.src = url
     document.querySelector('.gallery').append(img)
 }
 
-submitButton.addEventListener('click', ()=>{
+submitButton.addEventListener('click', () => {
     moveRight()
     let reader = new FileReader()
     reader.readAsDataURL(fileInput.files[0])
-    reader.onload = ()=> upload(reader.result)
+    reader.onload = () => upload(reader.result)
 })
