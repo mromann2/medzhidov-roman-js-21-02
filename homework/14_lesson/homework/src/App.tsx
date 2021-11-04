@@ -3,15 +3,13 @@ import './App.css';
 import { Goal } from './components/Goal/Goal';
 import { Input } from './components/Input/Input';
 
-
-
 class App extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
         this.addGoal = this.addGoal.bind(this);
         this.delete = this.delete.bind(this);
         this.state = {
-            goals: [],
+            goals: localStorage.getItem('Goals') ? JSON.parse(localStorage.getItem('Goals') as string) : [],
         };
     }
 
@@ -22,13 +20,13 @@ class App extends React.Component<any, any> {
             id: Date.now(),
             show: true,
         }]),
-        });
+        }, () => localStorage.setItem('Goals', JSON.stringify(this.state.goals)));
     }
 
     delete(id: number): void {
         this.setState({
             goals: this.state.goals.filter((line: any) => line.id !== id),
-        });
+        }, () => localStorage.setItem('Goals', JSON.stringify(this.state.goals)));
     }
 
     render() {
