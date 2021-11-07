@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/homework/14_lesson/react-app" libraries="{medzhidov-roman-js-21-02/homework/14_lesson/react-app/node_modules}" />
+    <file url="file://$PROJECT_DIR$/homework/15_lesson/react-app/src/App.tsx" libraries="{medzhidov-roman-js-21-02/homework/14_lesson/react-app/node_modules}" />
+  </component>
+</project>
