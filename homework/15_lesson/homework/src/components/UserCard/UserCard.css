@@ -1,9 +1,10 @@
 .user-card {
     display: flex;
     width: 350px;
-    margin: 10px;
+    margin: 5px;
     background-color: white;
     border-radius: 5px;
+    color: gray;
 }
 .user-card__icon {
     margin: 10px;
@@ -12,5 +13,8 @@
 }
 .user-card__name {
     margin: 10px;
-    color: gray;
+}
+.user-card_darkTheme {
+    background-color: dimgrey;
+    color: white;
 }
