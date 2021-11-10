@@ -9,7 +9,7 @@ export const getUserList = (
     limit: number,
     callback: (resp: Array<UserType>) => void,
     errorCallback?: (resp: any) => void,
-) => fetch(USER_URL, {
+) => fetch(`${USER_URL}?page=${page}&limit=${limit}`, {
         method: METHOD_GET,
         headers: new Headers({
             [APP_ID_FIELD]: APP_ID_VALUE,
