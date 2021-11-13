@@ -1,0 +1,12 @@
+.button {
+    width: 30px;
+    height: 35px;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 15%;
+    font-size: 150%;
+}
+.button_darkTheme {
+    background-color: dimgrey;
+    color: white;
+}

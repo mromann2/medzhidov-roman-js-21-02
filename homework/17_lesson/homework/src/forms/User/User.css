@@ -1,0 +1,9 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+button {
+    align-self: flex-end;
+}
