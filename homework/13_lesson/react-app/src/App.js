@@ -20,10 +20,3 @@ function App() {
 }
 
 export default App;
-
-//  <div>
-// {/*<Comment name={"Roman"} text={"Приветик!"}/>*/}
-// {/*<Comment name={"Корал"} text={"Салам!"}/>*/}
-// {/*<Comment name={"Иван"} text={"На здоровье!"}/>*/}
-// {/*{apiResponse.map(({name, text}, index) => <Comment key={index} name={name} text={text}/>)}*/}
-//  </div>
