@@ -1,0 +1,12 @@
+table, td  {
+    border: 1px solid black;
+    text-align: center;
+}
+td
+{
+    width: 150px;
+}
+
+.preButton{
+    margin-left: 125px;
+}
