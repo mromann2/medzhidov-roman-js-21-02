@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+}
+.section-header{
+    margin-left: 20px;
+}
+.section {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+}
+.first-block {
+    display: flex;
+    justify-content: space-between;
+}
+.section-header__h3 {
+    font-size: 1.5em;
+}
+.second-block{
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,16 @@
+.footer {
+    color: #696b6a;
+    background-color: #eee;
+    margin: 10px 20px 15px 20px;
+    height: 35px;
+}
+
+.right {
+    float: right;
+}
+
+footer span {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+}
