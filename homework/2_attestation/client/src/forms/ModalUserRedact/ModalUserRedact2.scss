@@ -1,0 +1,38 @@
+@import '../../constants/css/cssСonstans';
+
+
+.form-redact {
+  display: flex;
+  flex-direction: column;
+  background-color: $component-bg-color;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  &__pair-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &__form {
+    width: 35%;
+
+    &__gender {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  &__button {
+    width: 100%;
+    background-color: black;
+    border-color: black;
+  }
+}
