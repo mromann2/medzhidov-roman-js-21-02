@@ -1,0 +1,82 @@
+@import '../../constants/css/cssСonstans';
+
+.user-profile {
+  width: 100%;
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  &__button-back {
+    margin: 6px;
+    width: 100%;
+    padding: 6px;
+    background-color: $component-bg-color;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color linear 250ms;
+    &:hover {
+      background-color: grey;
+      color: ghostwhite;
+      cursor: pointer;
+    }
+
+    &_dark {
+      background-color: lightgray;
+      &:hover {
+        cursor: pointer;
+        color: ghostwhite;
+        background-color: grey;
+        box-shadow: 0 0 20px rgba(255,255,255, .7);
+      }
+    }
+  }
+  &__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 394px;
+  }
+}
+
+.form {
+  &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 6px;
+    padding: 6px;
+    background-color: $component-bg-color;
+    border-radius: 5px;
+
+    &_dark {
+      background-color: lightgray;
+    }
+  }
+  &__user-data {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px;
+    padding: 0 6px;
+
+    &__data {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    &__redact-icon {
+      margin-right: 10px;
+    }
+  }
+  &__picture {
+    img {
+      margin: 6px;
+      width: 256px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,.05);
+    }
+  }
+}
+.form__user {
+  display: flex;
+ justify-content: flex-start;
+}
