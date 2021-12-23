@@ -1,0 +1,1 @@
+export const GET_USERS_CARDS_LIST = 'GET_USERS_CARDS_LIST';
