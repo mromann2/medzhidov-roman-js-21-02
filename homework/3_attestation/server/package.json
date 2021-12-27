@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "1.server",
+  "version": "1.0.0",
+  "description": "Homework 31",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server",
+    "debug": "node --inspect src/server"
+  },
+  "author": "Albert Gabdrakhmanov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^3.1.0",
+    "request-context": "^2.0.0",
+    "simple-node-logger": "^21.8.12",
+    "string-format": "^2.0.0",
+    "uuid": "^8.3.2",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
